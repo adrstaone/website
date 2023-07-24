@@ -2466,7 +2466,7 @@ a img.aligncenter {
   display: inline-block;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .theme-btn {
@@ -3662,7 +3662,7 @@ header.header-5 .main-menu ul > li > a {
   overflow: hidden;
   padding: 40.5px 24px;
   display: inline-block;
-  color: #0070c0;
+  color: #838281;
   text-transform: capitalize;
 }
 header.header-5 .main-menu ul > li > a i {
@@ -3701,7 +3701,7 @@ header.header-5 .main-menu ul > li > ul li {
 header.header-5 .main-menu ul > li > ul li a {
   display: block;
   padding: 12px 25px;
-  color: #0070c0;
+  color: #838281;
 }
 header.header-5 .main-menu ul > li > ul li a:hover {
   color: #ffc000;
@@ -4176,7 +4176,6 @@ header.stop .top-header {
   padding-top: 140px;
   position: relative;
   z-index: 1;
-  background-position: 450px;
 }
 @media (max-width: 1400px) {
   .page-banner-wrap {
@@ -5425,7 +5424,6 @@ header.stop .top-header {
 }
 .section-title.section__title_4 h2 {
   font-family: "Comfortaa", sans-serif;
-  font-style: italic;
   font-weight: 700;
   font-size: 42px;
   line-height: 50px;
@@ -13030,7 +13028,7 @@ header.stop .top-header {
 
 .footer-4 {
   z-index: 1;
-  padding-top: 145px;
+  padding-top: 0;
   margin-top: 5px;
   position: relative;
   background-color: #211e3b;
