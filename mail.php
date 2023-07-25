@@ -5,11 +5,11 @@
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $subject = trim($_POST["subject"]);
+        $country = trim($_POST["city"]);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($subject) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($country) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -18,15 +18,16 @@
 
         // Set the recipient email address.
         // Note:  Update this to your desired email address.
-        $recipient = "support@envato.com";
+        $recipient = "so1ashok@yahoo.com";
 
         // Set the email subject.
-        $subjectname = "New Contact $subject";
+        $subjectname = "New Contact $country";
 
         // Build the email content.
         $email_content = "Name: $name  \r\n\n";
         $email_content .= "Email: $email \r\n\n";
-        $email_content .= "Subject: $subject \r\n\n";
+        $email_content .= "Subject: $country \r\n\n";
+        $email_content .= "Country: New user contact form information \r\n\n";
         $email_content .= "Message: $message \r\n\n";
 
         // Build the email headers.

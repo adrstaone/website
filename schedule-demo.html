@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="modinatheme">
     <!-- ======== Page title ============ -->
-    <title>adrsta - Information & Technology HTML Template</title>
+    <title>Adrsta - Bringing efficiency and privacy to advertising</title>
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <!-- ===========  All Stylesheet ================= -->
@@ -116,9 +116,9 @@
                                 </li>
                                 <li><a href="capabilities.html">Capabilities<i class="fas fa-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="capabilities.html">Stakeholders</a></li>
-                                        <li><a href="capabilities.html">Use Cases</a></li>
-                                        <li><a href="capabilities.html">consulting</a></li>
+                                        <li><a href="capabilities.html#sec1">Stakeholders</a></li>
+                                        <li><a href="capabilities.html#sec3">Use Cases</a></li>
+                                        <li><a href="capabilities.html#sec2">consulting</a></li>
 
                                     </ul>
                                 </li>
@@ -214,7 +214,7 @@
         </div>
     </section> -->
 
-    <section class="consultations-wrapper section-padding bg-contain pb-0" style="background-image: url('assets/img/circle-bg-2.png')">
+    <section class="consultations-wrapper section-padding bg-contain pb-0" style="background-image: url('assets/img/circle-bg-2.png');margin-top: 100px;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl-5">
@@ -248,11 +248,11 @@
                     <div class="consultations-form text-white">
                         <p>let’s talk with us</p>
                         <h1>Free Consultations</h1>
-                        <form action="#">
-                            <input type="text" placeholder="Full Name Here">
-                            <input type="email" placeholder="Email Address">
-                            <input type="email" placeholder="Country/origin">
-                            <textarea placeholder="Write Message"></textarea>
+                        <form action="/mail.php">
+                            <input type="text" name="name" placeholder="Full Name Here">
+                            <input type="email" name="email" placeholder="Email Address">
+                            <input type="text" name="country" placeholder="Country/origin">
+                            <textarea name="message" placeholder="Write Message"></textarea>
                             <button class="theme-btn" type="submit">Schedule now <i class="fas fa-arrow-right"></i></button>
                         </form>
                     </div>
