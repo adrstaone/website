@@ -12594,3 +12594,19 @@ header.header-5 .main-header-wraper .header-search.show .search-box .form-group:
 .contact_widget_2 .contact-us .single-contact-info .contact-info p {
   margin-top: -5px;
 }
+
+.image-container {
+  display: flex;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+  margin-top: 44px;
+    width: 200px;
+}
