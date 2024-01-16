@@ -1410,6 +1410,14 @@ p {
   display: flex; flex-direction: column; justify-content: center; width: 50%; padding-right: 72px
 }
 
+.carousel-item-content {
+  min-height: 700px; display: flex; flex-direction: column; justify-content: center; padding: 0 180px
+}
+
+.carousel-item {
+  background-color: #4573c4;
+}
+
 @media (max-width: 600px) {
     .home-header-section {
         background-color: #f4b200;height: unset; margin-top: 30px;
@@ -1428,6 +1436,17 @@ p {
     color: white;
     width: unset;
     padding: 30px;
+  }
+
+  .carousel-item {
+    background-color: #4573c4;
+  }
+
+  .carousel-item-content {
+    min-height: 500px;
+    display: flex; flex-direction: column; justify-content: center; padding: 0 48px;
+    line-height: 56px;
+     font-size: 36px;
   }
 
   .home-header-section-wrapper-right {
